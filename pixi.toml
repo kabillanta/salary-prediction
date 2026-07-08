@@ -1,0 +1,27 @@
+[workspace]
+authors = ["keanesc <145848994+keanesc@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "salary_prediction"
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+version = "0.1.0"
+
+[tasks]
+eda = "python -m research.eda"
+train = "python -m research.train_models"
+shap = "python -m research.explain_shap"
+api = "uvicorn backend.app.api:app --reload"
+all = "python -m research.eda && python -m research.train_models && python -m research.explain_shap"
+
+[dependencies]
+python = ">=3.10,<3.13"
+pandas = ">=3.0.3,<4"
+numpy = ">=2.4.6,<3"
+scikit-learn = ">=1.9.0,<2"
+matplotlib = ">=3.11.0,<4"
+xgboost = ">=3.3.0,<4"
+lightgbm = ">=4.6.0,<5"
+catboost = ">=1.2.5,<2"
+fastapi = ">=0.139.0,<0.140"
+uvicorn = ">=0.50.2,<0.51"
+joblib = ">=1.5.3,<2"
+shap = ">=0.50.0,<0.53"

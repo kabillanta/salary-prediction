@@ -1,0 +1,94 @@
+{
+  "final_model": "LightGBM Engineered",
+  "target": "salary",
+  "feature_columns": [
+    "job_title",
+    "education_level",
+    "industry",
+    "company_size",
+    "location",
+    "remote_work",
+    "experience_years",
+    "skills_count",
+    "certifications"
+  ],
+  "categorical_columns": [
+    "job_title",
+    "education_level",
+    "industry",
+    "company_size",
+    "location",
+    "remote_work"
+  ],
+  "random_state": 42,
+  "test_size": 0.2,
+  "metrics": {
+    "model": "LightGBM Engineered",
+    "train_mae": 3975.545516538132,
+    "test_mae": 4135.625737721022,
+    "train_rmse": 4984.353880229362,
+    "test_rmse": 5185.473037892961,
+    "train_r2": 0.9822762236860079,
+    "test_r2": 0.9806534037068041,
+    "fit_seconds": 3.9271810190002725
+  },
+  "input_categories": {
+    "job_title": [
+      "AI Engineer",
+      "Backend Developer",
+      "Business Analyst",
+      "Cloud Engineer",
+      "Cybersecurity Analyst",
+      "Data Analyst",
+      "Data Scientist",
+      "DevOps Engineer",
+      "Frontend Developer",
+      "Machine Learning Engineer",
+      "Product Manager",
+      "Software Engineer"
+    ],
+    "education_level": [
+      "Bachelor",
+      "Diploma",
+      "High School",
+      "Master",
+      "PhD"
+    ],
+    "industry": [
+      "Consulting",
+      "Education",
+      "Finance",
+      "Government",
+      "Healthcare",
+      "Manufacturing",
+      "Media",
+      "Retail",
+      "Technology",
+      "Telecom"
+    ],
+    "company_size": [
+      "Enterprise",
+      "Large",
+      "Medium",
+      "Small",
+      "Startup"
+    ],
+    "location": [
+      "Australia",
+      "Canada",
+      "Germany",
+      "India",
+      "Netherlands",
+      "Remote",
+      "Singapore",
+      "Sweden",
+      "UK",
+      "USA"
+    ],
+    "remote_work": [
+      "Hybrid",
+      "No",
+      "Yes"
+    ]
+  }
+}
